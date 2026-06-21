@@ -10,7 +10,7 @@ st.title("Anime Recommendation System")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\sahar\OneDrive\Desktop\ds and ml files\anime.csv")
+    df = pd.read_csv("anime.csv")
 
     df["genre"] = df["genre"].fillna("")
     df["rating"] = df["rating"].fillna(df["rating"].mean())
